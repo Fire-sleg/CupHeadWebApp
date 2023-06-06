@@ -1,0 +1,161 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+<div id="main">
+    <h1 style="font-family: rubik, helvetica, arial">Ласкаво просимо на сайті WIKI CUPHEAD</h1>
+    <br />
+    <p id="test">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cuphead — це
+        класична, 2D платформер, екшн-гра «run`n gun», яка зосереджена на
+        битвах з босами. Натхненні мультфільмами 1930-х років, брати Чад і
+        Джаред Молденхауером зі Studio MDHR створили проект, візуалізацію та
+        аудіофайли з використанням тих самих технік епохи, тобто традиційної
+        ручної анімації, акварельного фону та оригінальних джазових записів.
+    </p>
+    <p id="test">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Грайте за Cuphead або
+        Mugman (в одиночній або локальній кооперативі), долаючи дивні світи,
+        купуючи нову зброю, вивчаючи потужні суперходи та відкриваючи
+        приховані секрети, намагаючись повернути свій борг дияволу!
+    </p>
+    <video id="video" controls poster="../data/cuphead-poster.jpg">
+        <source src="../data/LaunchTrailer.mp4" type="video/mp4">
+    </video>
+
+    <div class="bosses" id="bosses">Боси</div>
+    <div class="bosses-img" id="bosses-img">
+        <div class="bosses-img-full">
+            <a href="rootPack.html"><img src="../data/Bosses/PsycarrotIcon.webp" /></a>
+            <a href="rootPack.html" id="boss-link">Банда коренеплодів</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="Goopy.html"><img src="../data/Bosses/GoopyIcon1.webp" /></a>
+            <a href="Goopy.html" id="boss-link">Гупі Ле Гранде</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="Hilga.html"><img src="../data/Bosses/HildaIcon1.webp" /></a>
+            <a href="Hilga.html" id="boss-link">Хільда ​​Берг</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/CagneyIcon1.webp" /></a>
+            <a href="#" id="boss-link">Кегні Гвоздика</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/RibbyIcon1.webp" /></a>
+            <a href="#" id="boss-link">Ріббі та Крокс</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/BaronessIcon.webp" /></a>
+            <a href="#" id="boss-link">Баронеса фон Бон Бон</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/BeppiIcon1.webp" /></a>
+            <a href="#" id="boss-link">Беппі клоун</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/DjimmiIcon1.webp" /></a>
+            <a href="#" id="boss-link">Джиммі Великий</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/GrimIcon1.webp" /></a>
+            <a href="#" id="boss-link">Грим Матчстік</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/WallyIcon1.webp" /></a>
+            <a href="#" id="boss-link">Уоллі Ворблс</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/HoneybottomsIcon1.webp" /></a>
+            <a href="#" id="boss-link">Рюмор Ханіботтомс</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/BrineybeardIcon.webp" /></a>
+            <a href="#" id="boss-link">Капітан Соляна Борода</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/SallyIcon1.webp" /></a>
+            <a href="#" id="boss-link">Саллі Стейджплей</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/WernerIcon1.webp" /></a>
+            <a href="#" id="boss-link">Вернер Верман</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/KahlIcon1.webp" /></a>
+            <a href="#" id="boss-link">Робот доктора Кахла</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/CalaMariaIcon1.webp" /></a>
+            <a href="#" id="boss-link">Кала Марія</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/ExpressIcon4.webp" /></a>
+            <a href="#" id="boss-link">Примарний експрес</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/KingDiceIcon.webp" /></a>
+            <a href="#" id="boss-link">Кінг Дайс</a>
+        </div>
+        <div class="bosses-img-full" id="Devil">
+            <a href="#"><img src="../data/Bosses/DevilIcon1.webp" /></a>
+            <a href="#" id="boss-link">Диявол</a>
+        </div>
+    </div>
+
+    <div class="bosses" id="RunNGun">Run 'N' Gun рівні</div>
+    <div class="bosses-img">
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/ForestFolliesIcon.webp" /></a>
+            <a href="#" id="boss-link">Лісові безумці</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/TreetopTroubleIcon.webp" /></a>
+            <a href="#" id="boss-link">Деревна проблема</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/FunhouseFrazzleIcon.webp" /></a>
+            <a href="#" id="boss-link">Будинок веселощів Фраззле</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/FunfairFeverIcon.webp" /></a>
+            <a href="#" id="boss-link">Весела лихоманка</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/RuggedRidgeIcon.webp" /></a>
+            <a href="#" id="boss-link">Міцний хребет</a>
+        </div>
+        <div class="bosses-img-full">
+            <a href="#"><img src="../data/Bosses/PerilousPiersIcon.webp" /></a>
+            <a href="#" id="boss-link">Небезпечні пірси</a>
+        </div>
+    </div>
+    <div class="bosses" id="bosses">Галерея</div>
+    <div class="bosses-img">
+        <div>
+            <img id="galery" src="../data/Galery/screen1.jpg" />
+        </div>
+        <div>
+            <img id="galery" src="../data/Galery/screen2.jpg" />
+        </div>
+        <div>
+            <img id="galery" src="../data/Galery/screen3.jpg" />
+        </div>
+        <div>
+            <img id="galery" src="../data/Galery/screen4.jpg" />
+        </div>
+        <div>
+            <img id="galery" src="../data/Galery/screen5.jpg" />
+        </div>
+        <div>
+            <img id="galery" src="../data/Galery/screen6.jpg" />
+        </div>
+        <div id="last">
+            <img id="galery" src="../data/Galery/screen7.jpg" />
+        </div>
+    </div>
+</div>
+<br>
+<br>

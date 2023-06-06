@@ -1,0 +1,85 @@
+﻿@page
+@model CupHeadWebApp.Pages.Bosses.RootPackModel
+<link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/css/bosses/rootPack.css" asp-append-version="true" />
+<div id="main">
+    <div class="start">
+        @*<div class="img-conteiner">
+            <img src="../data/BossesInPages/RootPack.png">
+        </div>*@
+        <aside>
+            <div class="aside-title">
+                <h2>Банда коренеплодів</h2>
+            </div>
+            
+            <div class="text-center">
+                <button class="btn btn-primary" onclick="showPhase('phase1')">Фаза 1</button>
+                <button class="btn btn-primary" onclick="showPhase('phase2')">Фаза 2</button>
+                <button class="btn btn-primary" onclick="showPhase('phase3')">Фаза 3</button>
+            </div>
+            <div class="boss-info">
+                <h2>Інформація про боса</h2>
+                <div id="phase1" class="boss-phase">
+                    <h3>Фаза 1</h3>
+                    <p>Опис фази 1 боса.</p>
+                </div>
+                <div id="phase2" class="boss-phase">
+                    <h3>Фаза 2</h3>
+                    <p>Опис фази 2 боса.</p>
+                </div>
+                <div id="phase3" class="boss-phase">
+                    <h3>Фаза 3</h3>
+                    <p>Опис фази 3 боса.</p>
+                </div>
+            </div>
+            <img src="../data/BossesInPages/RootPack.png">
+        </aside>
+        <h1>Банда коренеплодів</h1>
+        <p>
+            Банда коренеплодів (англ. The Root Pack) — одні з перших босів, з
+            якими ви стикаєтесь в Cuphead. Вони знаходяться на рівні "Паніка
+            ботаніка". Це найпростіші боси в грі (за думкою більшості
+            гравців), з якими гравець б'ється на Чорнильному острові один.
+        </p>
+        <div id="navigation">
+            <h3 id="text">Зміст</h3>
+            <ul id="list">
+                <ul id="text" id="list-fst">
+                    <a onclick="slowScroll('#descr')">
+                        <div id="content-link">1. Опис</div>
+                    </a>
+                    <ul id="text" id="list-sec">
+                        <a onclick="slowScroll('#appearance')"><div id="content-link">1.1. Зовнішність</div></a>
+                    </ul>
+                </ul>
+                <ul id="text" id="list-fst">
+                    <a onclick="slowScroll('#phase-1')"><div id="content-link">2. Фаза 1: Сел Картопля</div></a>
+                </ul>
+                <ul id="text" id="list-fst">
+                    <a onclick="slowScroll('#phase-2')"><div id="content-link">3. Фаза 2: Оллі Цибулина</div></a>
+                </ul>
+                <ul id="text" id="list-fst">
+                    <a onclick="slowScroll('#phase-3')"><div id="content-link">4. Фаза 3: Чонсі Шантане</div></a>
+                </ul>
+                <ul id="text" id="list-fst">
+                    <a onclick="slowScroll('#expert')"><div id="content-link">5. Експерт</div></a>
+                </ul>
+                <ul id="text" id="list-fst">
+                    <a onclick="slowScroll('#interesting-facts')"><div id="content-link">6. Цікаві факти</div></a>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    
+
+</div>
+<script>
+    function showPhase(phaseId) {
+        $(".boss-phase").hide();
+        $("#" + phaseId).show();
+    }
+    window.onload = function () {
+        showPhase('phase1');
+    };
+    
+</script>

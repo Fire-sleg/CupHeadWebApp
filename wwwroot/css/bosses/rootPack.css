@@ -130,8 +130,21 @@ a {
     }
 }
 .description{
-    line-height:2em;
+    line-height:1.7em;
 }
     .description ul {
         padding-left: 2em;
     }
+
+
+
+#galery1 {
+    margin: 10px;
+    height:auto;
+    width:auto;
+}
+.gal1{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}

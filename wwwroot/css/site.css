@@ -119,6 +119,18 @@ footer{
     padding-bottom:1em;
 }
 
+.icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: left;
+}
+
+#twitter {
+    width: 55px;
+    height: 55px;
+    padding-right: 15px;
+}
+
 @media (max-width: 768px) {
     .row {
         flex-wrap: wrap;
@@ -134,6 +146,21 @@ footer{
     header {
         padding-bottom: 10em;
     }
+    footer h1{
+        font-size:1.5em;
+    }
+    footer h2 {
+        font-size: 1em;
+    }
+    .icons{
+        flex-wrap:wrap;
+    }
+    #twitter {
+        width: 30px;
+        height: 30px;
+        padding-right: 10px;
+    }
+    
 }
 
 a{
@@ -193,14 +220,3 @@ a{
     border-radius:4px;
 }
 
-.icons {
-    margin-top: 10px;
-    display: flex;
-    justify-content: left;
-}
-
-#twitter {
-    width: 55px;
-    height: 55px;
-    padding-right: 15px;
-}

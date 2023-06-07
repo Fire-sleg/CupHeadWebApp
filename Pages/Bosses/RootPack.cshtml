@@ -30,7 +30,7 @@
                 </li>
 
                 </ul>*@
-                <a class="nav-link active phase" onfocus="" aria-current="page" href="#" onclick="showPhase('phase1')" id="phase-link-1">Фаза 1</a>
+                <a class="nav-link active phase" aria-current="page" href="#" onclick="showPhase('phase1')" id="phase-link-1">Фаза 1</a>
                 <a class="nav-link phase" href="#" onclick="showPhase('phase2')" >Фаза 2</a>
                 <a class="nav-link phase" href="#" onclick="showPhase('phase3')" >Фаза 3</a>
             </div>
@@ -85,8 +85,97 @@
                     </div>
                 </div>
                 <div id="phase2" class="boss-phase">
+                    <img src="../data/BossesInPages/Weepy.webp">
+                    <div class="boss-title">
+                        <h4>Бойова інформація</h4>
+                    </div>
+                    <div class="battle-inf">
+                        <h5>Здоров'я</h5>
+                        <h5>400/425</h5>
+                    </div>
+                    <div class="battle-inf">
+                        <h5>Атаки</h5>
+                        <h5>Сльози</h5>
+                    </div>
+                    <div class="battle-inf">
+                        <h5>Прислуги</h5>
+                        <h5>Немає</h5>
+                    </div>
+                    <div class="battle-inf">
+                        <h5>Об'єкти, що парируються</h5>
+                        <h5>Сльози</h5>
+                    </div>
+                    <div class="battle-inf">
+                        <h5>Кількість фаз</h5>
+                        <h5>3</h5>
+                    </div>
+                    <div class="boss-title">
+                        <h4>Інші деталі</h4>
+                    </div>
+                    <div class="battle-inf">
+                        <h5>Локація</h5>
+                        <h5>Чорнильний острів один</h5>
+                    </div>
+                    <div class="battle-inf">
+                        <h5>Рівень</h5>
+                        <h5>Паніка ботаніка</h5>
+                    </div>
+                    <div class="battle-inf">
+                        <h5>Стать</h5>
+                        <h5>Чоловіча</h5>
+                    </div>
+                    <div class="battle-inf">
+                        <h5>Роль</h5>
+                        <h5>Цибуля</h5>
+                    </div>
                 </div>
                 <div id="phase3" class="boss-phase">
+                    <img src="../data/BossesInPages/Carrot.webp">
+                    <div class="boss-title">
+                        <h4>Бойова інформація</h4>
+                    </div>
+                    <div class="battle-inf">
+                        <h5>Здоров'я</h5>
+                        <h5>450/475/475</h5>
+                    </div>
+                    <div class="battle-inf">
+                        <h5>Атаки</h5>
+                        <h5>
+                            Енергійні кільця,
+                            Самонавідні моркви
+                        </h5>
+                    </div>
+                    <div class="battle-inf">
+                        <h5>Прислуги</h5>
+                        <h5>Немає</h5>
+                    </div>
+                    <div class="battle-inf">
+                        <h5>Об'єкти, що парируються</h5>
+                        <h5>Немає</h5>
+                    </div>
+                    <div class="battle-inf">
+                        <h5>Кількість фаз</h5>
+                        <h5>3</h5>
+                    </div>
+                    <div class="boss-title">
+                        <h4>Інші деталі</h4>
+                    </div>
+                    <div class="battle-inf">
+                        <h5>Локація</h5>
+                        <h5>Чорнильний острів один</h5>
+                    </div>
+                    <div class="battle-inf">
+                        <h5>Рівень</h5>
+                        <h5>Паніка ботаніка</h5>
+                    </div>
+                    <div class="battle-inf">
+                        <h5>Стать</h5>
+                        <h5>Чоловіча</h5>
+                    </div>
+                    <div class="battle-inf">
+                        <h5>Роль</h5>
+                        <h5>Морква</h5>
+                    </div>
                 </div>
             </div>
 
@@ -262,13 +351,14 @@
 </div>
 
 <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        showPhase('phase1');
+    });
     function showPhase(phaseId) {
         $(".boss-phase").hide();
         $("#" + phaseId).show();
     }
-    window.onload = function () {
-        showPhase('phase1');
-    };
+    
 
     var link = document.getElementById("phase-link-1");
     link.focus();

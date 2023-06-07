@@ -1,20 +1,35 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿
 
-// Write your JavaScript code.
-//function adCloseButton() {
-//    document.getElementById("ad-container").style.opacity = 0;
-//    setTimeout(function () {
-//        document.getElementById("ad-container").style.display = "none";
-//    }, 500);
-//    // document.getElementById("ad-container").style.display = "none";
-//    document.body.style.opacity = 1;
-//}
 
-//function showAd() {
-//    // document.getElementById("ad-container").style.visibility = "visible";
-//    document.getElementById("ad-container").style.opacity = 1;
-//}
+
+window.onload = function () {
+    document.getElementById("ad-container").style.visibility = "hidden";
+   /* console.log(localStorage);*/
+    if (!sessionStorage.getItem('messageShown')) {
+        document.getElementById("ad-container").style.visibility = "visible";
+        setTimeout(showAd, 200);
+        sessionStorage.setItem('messageShown', 'false');
+
+    }
+    
+};
+//window.addEventListener('close', function () {
+//    console.log(localStorage);
+//    localStorage.clear();
+//});
+function adCloseButton() {
+    document.getElementById("ad-container").style.opacity = 0;
+    setTimeout(function () {
+        document.getElementById("ad-container").style.display = "none";
+    }, 500);
+    // document.getElementById("ad-container").style.display = "none";
+    document.body.style.opacity = 1;
+}
+
+function showAd() {
+    // document.getElementById("ad-container").style.visibility = "visible";
+    document.getElementById("ad-container").style.opacity = 1;
+}
 
 
 function slowScroll(id) {

@@ -48,6 +48,10 @@ nav{
     flex-wrap: nowrap;
 }
 
+footer{
+    padding-bottom:1em;
+}
+
 @media (max-width: 768px) {
     .row {
         flex-wrap: wrap;
@@ -58,4 +62,78 @@ nav{
     footer{
         font-size:12px;
     }
+}
+@media screen and (max-width: 900px) {
+    header {
+        padding-bottom: 10em;
+    }
+}
+
+a{
+    text-decoration:none;
+}
+
+.btn-custom {
+    background-color: rgb(151, 12, 12);
+    color: white;
+}
+
+
+
+
+
+
+#ad-container {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* visibility: hidden; */
+    background-color: #54545433;
+    position: fixed;
+    z-index: 4;
+    /* position: absolute; */
+}
+
+#ad {
+    border: 1px solid black;
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1), 0.3em 0.3em 1em rgba(0,0,0,0.3);
+    opacity: 1;
+    height: 400px;
+    width: 600px;
+    background-color: rgb(151, 12, 12);
+    position: fixed;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 70% 30%;
+    top: 20%;
+}
+
+    #ad span {
+        font-family: "rubik", helvetica, arial, sans-serif;
+        font-size: 2.2em;
+    }
+
+#ad-buttons button {
+    width: 150px;
+    height: 50px;
+    color:black;
+    border-radius:4px;
+}
+
+.icons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: left;
+}
+
+#twitter {
+    width: 55px;
+    height: 55px;
+    padding-right: 15px;
 }

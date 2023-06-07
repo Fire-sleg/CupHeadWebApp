@@ -30,21 +30,27 @@
                     </ul>
                 </div>
             </div>
-            <partial name="_LoginPartial" />
+            @*<partial name="_LoginPartial" />*@
         </nav>
     </header>
-    @*<div id="ad-container">
-      <div id="ad">
-        <div id="ad-text">
-          <span>Дайте гроші</span>
-        </div>
 
-        <div id="ad-buttons">
-          <button>Даю</button>
-          <button onclick="adCloseButton()">Нема</button>
+
+
+    <div id="ad-container">
+        <div id="ad">
+            <div id="ad-text">
+                <span>Тут може бути ваша реклама</span>
+            </div>
+
+            <div id="ad-buttons">
+                @*<button>Даю</button>*@
+                <button onclick="adCloseButton()">Ок</button>
+            </div>
         </div>
-      </div>
-    </div>*@
+    </div>
+
+
+
     <div class="container" style="padding-bottom:4em;">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -58,7 +64,27 @@
         <div class="container">
             <div class="row" style="justify-content:space-between;">
                 <div class="col-4">
-                    <p><b>WIKI</b>CUPHEAD</p>
+                    <a asp-area="" asp-page="/Index"><h1><b>WIKI</b>CUPHEAD</h1></a>
+                    <div class="follow-us">
+                        <h4>Follow us</h4>
+                        <div class="icons">
+                            <a href="https://cuphead.iam8bit.com/en">
+                                <img id="twitter" src="/data/Icons/chrome_wxXMRZ3rP5 (1).svg" />
+                            </a>
+                            <a href="https://www.youtube.com/Studiomdhr">
+                                <img id="twitter" src="/data/Icons/icons8-youtube-50.svg" />
+                            </a>
+                            <a href="https://twitter.com/StudioMDHR">
+                                <img id="twitter" src="/data/Icons/icons8-twitter-50.svg" />
+                            </a>
+                            <a href="https://www.facebook.com/studiomdhr/">
+                                <img id="twitter" src="/data/Icons/icons8-facebook-50.svg" />
+                            </a>
+                            <a href="https://store.steampowered.com/app/268910/Cuphead/">
+                                <img id="twitter" src="/data/Icons/icons8-steam-symbol-50.svg" />
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-4">
                 <p>Сайт знаходиться на етапі допрацювання</p>

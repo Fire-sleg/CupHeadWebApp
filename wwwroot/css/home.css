@@ -7,8 +7,8 @@
     align-items: center;
     text-align: justify;
     flex-direction: column;
-
-    padding:3em;
+    
+    padding: 3em;
 }
 *{
     color:white;
@@ -75,7 +75,7 @@
 }
 
     #boss-link:hover {
-        color: #df9742; /*#d6c99f;*/
+        color: #d6c99f; /*#d6c99f;*/
         text-decoration: underline;
     }
 

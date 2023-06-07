@@ -1,68 +1,54 @@
 ﻿@page
-@model CupHeadWebApp.Pages.Bosses.RootPackModel
+@model CupHeadWebApp.Pages.Bosses.GoopyLeGrandeModel
 <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
 <link rel="stylesheet" href="~/css/bosses/rootPack.css" asp-append-version="true" />
 <div id="main">
     <div class="start">
-        @*<div class="img-conteiner">
-            <img src="../data/BossesInPages/RootPack.png">
-        </div>*@
         <h1>Банда коренеплодів</h1>
         <br />
         <aside>
-            @*<div class="aside-title">
-                <h4>Банда коренеплодів</h4>
-            </div>*@
-
             <div class="phase-links">
-                @*<button class="btn btn-primary" onclick="showPhase('phase1')">Фаза 1</button>
-                <button class="btn btn-primary" onclick="showPhase('phase2')">Фаза 2</button>
-                <button class="btn btn-primary" onclick="showPhase('phase3')">Фаза 3</button>*@
-                @*<ul >
-                <li >
-                <a class="nav-link active" aria-current="page" href="#" onclick="showPhase('phase1')">Фаза 1</a>
-                </li>
-                <li >
-                <a class="nav-link" href="#" onclick="showPhase('phase2')">Фаза 2</a>
-                </li>
-                <li >
-                <a class="nav-link" href="#" onclick="showPhase('phase3')">Фаза 3</a>
-                </li>
 
-                </ul>*@
                 <a class="nav-link active phase" aria-current="page" href="#" onclick="showPhase('phase1')" id="phase-link-1">Фаза 1</a>
-                <a class="nav-link phase" href="#" onclick="showPhase('phase2')" >Фаза 2</a>
-                <a class="nav-link phase" href="#" onclick="showPhase('phase3')" >Фаза 3</a>
+                <a class="nav-link phase" href="#" onclick="showPhase('phase2')">Фаза 2</a>
+                <a class="nav-link phase" href="#" onclick="showPhase('phase3')">Фаза 3</a>
             </div>
             <div class="boss-info">
                 <div class="boss-title">
                     <h4>Інформація про боса</h4>
-
                 </div>
                 <div id="phase1" class="boss-phase">
-                    <img src="../data/BossesInPages/Potato.webp">
+                    <img src="../data/BossesInPages/Goopy.webp">
                     <div class="boss-title">
                         <h4>Бойова інформація</h4>
                     </div>
                     <div class="battle-inf">
                         <h5>Здоров'я</h5>
-                        <h5>450/360/400</h5>
+                        <h5>
+                            1000/1200/1400
+                        </h5>
                     </div>
                     <div class="battle-inf">
                         <h5>Атаки</h5>
-                        <h5>Земляні кулі та черви</h5>
-                    </div>
-                    <div class="battle-inf">
-                        <h5>Прислуги</h5>
-                        <h5>Немає</h5>
+                        <h5>
+                            Стрибок;
+                            <br>
+                            Перетворення на боксерську рукавичку;
+                            <br>
+                            Удар кулаком;
+                            <br>
+                            Скруха надгробком
+                        </h5>
                     </div>
                     <div class="battle-inf">
                         <h5>Об'єкти, що парируються</h5>
-                        <h5>Черви</h5>
+                        <h5>Знаки питання</h5>
                     </div>
                     <div class="battle-inf">
                         <h5>Кількість фаз</h5>
-                        <h5>3</h5>
+                        <h5>
+                            2/3
+                        </h5>
                     </div>
                     <div class="boss-title">
                         <h4>Інші деталі</h4>
@@ -73,7 +59,7 @@
                     </div>
                     <div class="battle-inf">
                         <h5>Рівень</h5>
-                        <h5>Паніка ботаніка</h5>
+                        <h5>Виверт мулу</h5>
                     </div>
                     <div class="battle-inf">
                         <h5>Стать</h5>
@@ -81,7 +67,12 @@
                     </div>
                     <div class="battle-inf">
                         <h5>Роль</h5>
-                        <h5>Картопля</h5>
+                        <h5>
+                            Стрибаючий бос (фази 1 і 2);
+                            <br>
+                            Бос заднього фону (фаза 3)
+                        </h5>
+                        
                     </div>
                 </div>
                 <div id="phase2" class="boss-phase">
@@ -142,7 +133,6 @@
                         <h5>Атаки</h5>
                         <h5>
                             Енергійні кільця,
-                            <br>
                             Самонавідні моркви
                         </h5>
                     </div>
@@ -181,38 +171,50 @@
             </div>
 
         </aside>
-        
+
         <p style="line-height:2em;">
             Банда коренеплодів (англ. The Root Pack) — одні з перших босів, з
             якими ви стикаєтесь в Cuphead. Вони знаходяться на рівні "Паніка
             ботаніка". Це найпростіші боси в грі (за думкою більшості
             гравців), з якими гравець б'ється на Чорнильному острові один.
         </p>
-        
+
         <div id="navigation">
-            <h3 >Зміст</h3>
+            <h3>Зміст</h3>
             <ul id="list">
                 <ul id="list-fst">
                     <a href="#scrollspy1">
                         <div id="content-link">1. Опис</div>
                     </a>
-                    <ul  id="list-sec" style="margin-left: 1em;">
+                    <ul id="list-sec" style="margin-left: 1em;">
                         <a href="#scrollspy1.1"><div id="content-link">1.1. Зовнішність</div></a>
                     </ul>
                 </ul>
                 <ul id="list-fst">
-                    <a href="#scrollspy2"><div id="content-link">2. Фаза 1: Сел Картопля</div></a>
+                    <a href="#scrollspy2"><div id="content-link">2. В бою</div></a>
+                    <ul id="list-sec" style="margin-left: 1em;">
+                        <a href="#scrollspy2.1"><div id="content-link">2.1. Вступ</div></a>
+                    </ul>
+                    <ul id="list-sec" style="margin-left: 1em;">
+                        <a href="#scrollspy2.2"><div id="content-link">2.2. Фаза 1</div></a>
+                    </ul>
+                    <ul id="list-sec" style="margin-left: 1em;">
+                        <a href="#scrollspy2.3"><div id="content-link">2.3. Фаза 2</div></a>
+                    </ul>
+                    <ul id="list-sec" style="margin-left: 1em;">
+                        <a href="#scrollspy2.4"><div id="content-link">2.4. Фаза 3</div></a>
+                    </ul>
                 </ul>
-                <ul  id="list-fst">
-                    <a href="#scrollspy3"><div id="content-link">3. Фаза 2: Оллі Цибулина</div></a>
+                <ul id="list-fst">
+                    <a href="#scrollspy3"><div id="content-link">3. Експерт</div></a>
                 </ul>
-                <ul  id="list-fst">
-                    <a href="#scrollspy4"><div id="content-link">4. Фаза 3: Чонсі Шантане</div></a>
+                <ul id="list-fst">
+                    <a href="#scrollspy4"><div id="content-link">4. Галерея</div></a>
                 </ul>
-                <ul  id="list-fst">
-                    <a href="#scrollspy5"><div id="content-link">5. Експерт</div></a>
+                <ul id="list-fst">
+                    <a href="#scrollspy5"><div id="content-link">5. Звуки</div></a>
                 </ul>
-                <ul  id="list-fst">
+                <ul id="list-fst">
                     <a href="#scrollspy6"><div id="content-link">6. Цікаві факти</div></a>
                 </ul>
             </ul>
@@ -345,9 +347,9 @@
                 </ul>
             </div>
         </div>
-        
+
     </div>
-    
+
 
 </div>
 
